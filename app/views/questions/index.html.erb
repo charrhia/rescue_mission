@@ -1,0 +1,15 @@
+
+<h1>Launch Academy FAQ</h1>
+<h2>Questions:</h2>
+
+<div id="questions-div">
+
+<ul>
+  <% @questions.each do |question| %>
+  <li><%= link_to question.title, question %></li>
+  <% end %>
+</ul>
+
+
+
+</div>

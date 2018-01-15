@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+USER STORY NUMBER 1
 
-Things you may want to cover:
+* AS A USER I WANT TO VIEW RECENTLY POSTED QUESTIONS SO I CAN HELP OTHERS
 
-* Ruby version
+* I MUST SEE THE TITLE OF EACH QUESTION
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* I MUST SEE QUESTIONS LISTED IN ORDER, MOST RECENTLY POSTED FIRST
