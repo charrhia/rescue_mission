@@ -2,6 +2,12 @@
 
 <h2 style="display:inline-block;"><%= @question.title %></h2>
 
+<button id="delete" style="display:inline-block;">
+<%= link_to "Delete", @question, :method => :delete %>
+</button>
+
+
+
 <%= form_for(@question) do |f| %>
 
 <div class="form-content">
