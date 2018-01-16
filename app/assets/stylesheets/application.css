@@ -1,15 +1,98 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* main divs  */
+
+body {
+  font-family: 'Source Sans Pro', sans-serif;
+  padding: 50px 50px;
+}
+
+
+/* titles, headers */
+
+h1, h2 {
+  color: #0074D9;
+}
+
+a {
+  color: black;
+}
+
+
+
+/* clicky things */
+
+button {
+  background-color: #7FDBFF;
+  padding: 5px 5px;
+  font-size: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+button a {
+  color: white;
+}
+
+#edit {
+  color: white;
+  margin-left: 20px;
+  border: 0 none;
+  cursor:pointer;
+
+}
+
+#delete {
+  margin-left: 10px;
+}
+
+/* form things */
+
+.field {
+  margin: 7px 7px;
+}
+
+#errors {
+  color: red;
+  font-size: 13px;
+}
+
+#errors h2 {
+  color: red;
+  font-size: 18px;
+}
+
+
+.field input {
+  border-radius: 5px;
+  width: 200px;
+}
+
+#large-text input {
+  width: 500px;
+  height: 100px;
+}
+
+#large-text-2 input {
+  width: 500px;
+  height: 100px;
+}
+
+input[type=submit] {
+  background: #7FDBFF;
+  border-radius: 5px;
+  color: white;
+  cursor:pointer;
+  border: 0 none;
+  font-size: 15px;
+}
+
+
+/* username things */
+
+#question-answer {
+  color: white;
+  font-weight: bold;
+  font-style: italic;
+  background-color: #7FDBFF;
+  padding: 5px 5px;
+  max-width: 75px;
+}

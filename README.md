@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+USER STORY NUMBER 7
 
-Things you may want to cover:
+* AS A USER I WANT TO DELETE A QUESTION
 
-* Ruby version
+* I MUST BE ABLE TO DELETE A QUESTION FROM THE EDIT PAGE
 
-* System dependencies
+* I MUST BE ABLE TO DELETE A QUESTION FROM THE DETAILS PAGE
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* ALL ANSWERS ASSOCIATED WITH THE QUESTION MUST ALSO BE DELETED
