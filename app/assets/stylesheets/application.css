@@ -32,6 +32,13 @@ button a {
   color: white;
 }
 
+#edit {
+  color: white;
+  margin-left: 20px;
+  border: 0 none;
+  cursor:pointer;
+
+}
 
 /* form things */
 

@@ -1,13 +1,19 @@
 <h1>Launch Academy FAQ</h1>
 
-<h2><%= @question.title %></h2>
+<h2 style="display:inline-block;"><%= @question.title %></h2>
+
+
+<button id="edit" style="display:inline-block;">
+    <%= link_to 'Edit a Question', edit_question_path %>
+</button>
+
+
 
 <div>
 
   <p id="question-answer"><%= @question.user_name %></p>
 
   <p id="description"><%= @question.description %></p>
-
 
 </div>
 
@@ -17,7 +23,9 @@
 
   <ol>
     <% @answers.each do |answer| %>
+
     <p id="question-answer"><%= answer.user_name %>:</p>
+
     <li><%= answer.description %></li>
     <% end %>
 
@@ -34,8 +42,6 @@
 
 <div class="form-content">
 
-
-
   <% if @answer.errors.any? %>
   <div id="errors">
     <h2><b>Attention: Please fill out the form correctly!</b></h2>
@@ -46,7 +52,6 @@
     </ul>
   </div>
   <% end %>
-
 
 
   <div class="field">
