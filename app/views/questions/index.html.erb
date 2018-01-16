@@ -1,14 +1,25 @@
 
 <h1>Launch Academy FAQ</h1>
-<h2>Questions:</h2>
+
 
 <div id="questions-div">
 
-<ul>
-  <% @questions.each do |question| %>
-  <li><%= link_to question.title, question %></li>
-  <% end %>
-</ul>
+  <h2><u>Questions:</u></h2>
+  <ol>
+    <% @questions.each do |question| %>
+    <p><%= link_to question.title, question %></p>
+    <% end %>
+  </ol>
+
+  <div id="buttons">
+  <button>
+    <%= link_to 'Ask a Question', new_question_path %>
+  </button>
+
+</div>
+
+
+
 
 
 

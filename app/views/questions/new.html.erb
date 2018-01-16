@@ -1,0 +1,49 @@
+
+<h1>Submit a New Question</h1>
+
+
+<%= form_for(@question) do |f| %>
+
+<div class="form-content">
+
+  <% if @question.errors.any? %>
+  <div id="errors">
+    <h2><b>Attention: Please fill out the form correctly!</b></h2>
+    <ul>
+      <% @question.errors.full_messages.each do |msg| %>
+      <p><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+
+  <div class="field">
+      <%= f.label :user_name %><br />
+      <%= f.text_field :user_name %>
+  </div>
+
+  <div class="field">
+      <%= f.label :title %><br />
+      <%= f.text_field :title %>
+  </div>
+
+  <div class="field" id="large-text">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="submit">
+    <%= f.submit 'Submit' %>
+  </div>
+
+  <div class="actions">
+    <button>
+    <%= link_to 'Back', questions_path %>
+  </button>
+  </div>
+
+
+
+<% end %>
+</div>

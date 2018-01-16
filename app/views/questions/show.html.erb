@@ -4,8 +4,64 @@
 
 <div>
 
-<p id="user">By: <%= @question.user_name %></p>
+  <p id="question-answer"><%= @question.user_name %></p>
 
-<p id="description"><%= @question.description %></p>
+  <p id="description"><%= @question.description %></p>
 
+
+</div>
+
+<div>
+
+  <h3>Answers:</h3>
+
+  <ol>
+    <% @answers.each do |answer| %>
+    <p id="question-answer"><%= answer.user_name %>:</p>
+    <li><%= answer.description %></li>
+    <% end %>
+
+  </ol>
+</div>
+
+
+
+
+<h2>Submit a New Answer</h2>
+
+
+<%= form_for [@question, @answer] do |f| %>
+
+<div class="form-content">
+
+
+
+  <% if @answer.errors.any? %>
+  <div id="errors">
+    <h2><b>Attention: Please fill out the form correctly!</b></h2>
+    <ul>
+      <% @answer.errors.full_messages.each do |msg| %>
+      <p><%= msg %></li>
+      <% end %>
+    </ul>
+  </div>
+  <% end %>
+
+
+
+  <div class="field">
+    <%= f.label :user_name %><br />
+    <%= f.text_field :user_name %>
+  </div>
+
+  <div class="field" id="large-text-2">
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </div>
+
+  <div class="submit">
+    <%= f.submit 'Submit' %>
+  </div>
+
+  <% end %>
 </div>
